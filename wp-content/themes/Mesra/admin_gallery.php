@@ -89,7 +89,7 @@
                                 <form method="post" class="login" action = "news_post.php">
 
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">News Heading<span class="required">*</span></label>
+                                        <label for="username">Album<span class="required">*</span></label>
                                         <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
