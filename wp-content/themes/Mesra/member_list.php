@@ -1,6 +1,7 @@
 	<?php
 	require_once('../../../wp-load.php');
 	include dirname( __FILE__ ) .'/header.php' ;
+	global $wpdb;
 	?>
 
     <div id="main-content">
@@ -74,9 +75,40 @@
 							  <input type="search" name="search" id = "myInput" onkeyup="myFunction()" placeholder="Name, email, Phone, Adm No, etc...." style="font-size:12px;width:300px">							 
 							</form>
 						 </h4>
+						 <?php
+							$member_details = $wpdb->get_results("SELECT * FROM wp_user_details");
+						 ?>
                         <section class="entry-list" style="padding-top:15px;border-top:solid #9a9a9a 3px;">
                             <ul class="clearfix" id = "myUL">
+							<?php foreach($member_details as $member_detail){ ?>
                                 <li>
+                                    <article id="post-742" class="entry-item clearfix post-742 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-css tag-jquery tag-kopa">
+                                        <div class="entry-thumb">
+                                            <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo $member_detail->profile_pic; ?>" alt="Haute Couture fact file bibendum" style = "height : 210px;" /></a>
+                                        </div>
+                                        <!-- entry-thumb -->
+										
+                                        <div class="entry-content" style="padding:0px;">
+                                            <header>
+                                                <h6 class="entry-title search_box" style="margin-bottom:0px;" id="mname">Name: <?php echo $member_detail->name; ?></h6>
+												<div >Occupation: <?php echo $member_detail->occupation; ?></div>
+                                                <div class="search_box">email: <?php echo $member_detail->email1; ?></div>
+												<div class="search_box">phone: <?php echo $member_detail->mobile; ?></div> 
+												<div class="search_box">Adm No:<?php echo $member_detail->admsn_no; ?></div>
+												<div>10th Passout:<?php echo $member_detail->passout10; ?></div> 												
+                                            </header>
+                                            <h6 style="margin:0px;">Permanent Address</h6>
+											<p><?php echo $member_detail->paddress; ?></p>
+											<h6 style="margin:0px;">Office Address</h6>
+											<p><?php echo $member_detail->oaddress; ?></p>
+                                         </div>
+                                        <!-- entry-content -->
+
+                                    </article>
+                                    <!-- entry-item -->
+                                </li>
+							<?php } ?>
+								<li>
                                     <article id="post-742" class="entry-item clearfix post-742 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-css tag-jquery tag-kopa">
                                         <div class="entry-thumb">
                                             <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5ptlaobzhmovm2.jpg" alt="Haute Couture fact file bibendum" /></a>

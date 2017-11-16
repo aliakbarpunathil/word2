@@ -1,8 +1,10 @@
 	<?php
 	require_once('../../../wp-load.php');
 	include dirname( __FILE__ ) .'/header.php' ;
+	global $wpdb;
+	$exe_comite = $wpdb->get_results("SELECT u.name, u.profile_pic, u.role, r.role roles FROM wp_user_details u JOIN user_roles r ON u.role = r.id");
+	
 	?>
-
 
     <div id="main-content">
 
@@ -125,14 +127,17 @@
                            <div class="widget-area-6">
 
 								<div id="kopa_widget_woocommerce_products-1" class="widget kopa-product-list-widget">
-									
+								<?php 
+								foreach($exe_comite as $exe_com)
+								if($exe_com->role == "1" ) { ?>	
+								
 									<div class="col-md-12" style="padding:10px;">
 									    <div class="col-md-4"></div>
 										<div class="col-md-4">
 												<article class="entry-item">
 													<div class="entry-thumb" style="text-align:center;">														
-															<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" style="border:solid #dadada  2px;">
-															<h4 style="margin:2px;">Carven Sweater</h4>
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>
 															<h5 style="margin:0px;color:#3b5998">President</h5>
 													</div>													
 													<!-- entry-content -->
@@ -140,71 +145,102 @@
 										</div>
 										<div class="col-md-4"></div>
 									</div>
-									
+								<?php } ?>
 									<div class="col-md-12" style="padding:10px;">
-									    <div class="col-md-4">
-											<article class="entry-item">
-													<div class="entry-thumb" style="text-align:center;">														
-															<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" style="border:solid #dadada  2px;">
-															<h4 style="margin:2px;">Carven Sweater</h4>
-															<h5 style="margin:0px;color:#3b5998">President</h5>
-													</div>													
-													<!-- entry-content -->
-											</article>
-										</div>
-										<div class="col-md-4">
+									<?php foreach($exe_comite as $exe_com)
+								if($exe_com->role == "2" ) { ?>	
+									   <div class="col-md-4">
 												<article class="entry-item">
 													<div class="entry-thumb" style="text-align:center;">														
-															<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" style="border:solid #dadada  2px;">
-															<h4 style="margin:2px;">Carven Sweater</h4>
-															<h5 style="margin:0px;color:#3b5998">President</h5>
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>
+															<h5 style="margin:0px;color:#3b5998">Secretary</h5>
 													</div>													
 													<!-- entry-content -->
 												</article>
 										</div>
+									<?php } ?>
+									<?php foreach($exe_comite as $exe_com)
+								if($exe_com->role == 3 ) { ?>	
+										<div class="col-md-4">
+												<article class="entry-item">
+													<div class="entry-thumb" style="text-align:center;">														
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>
+															<h5 style="margin:0px;color:#3b5998">Treasurer</h5>
+													</div>													
+													<!-- entry-content -->
+												</article>
+										</div>
+										<?php } ?>
+										<?php foreach($exe_comite as $exe_com)
+								if($exe_com->role == 18 ) { ?>	
 										<div class="col-md-4">
 											<article class="entry-item">
 													<div class="entry-thumb" style="text-align:center;">														
-															<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" style="border:solid #dadada  2px;">
-															<h4 style="margin:2px;">Carven Sweater</h4>
-															<h5 style="margin:0px;color:#3b5998">President</h5>
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>
+															<h5 style="margin:0px;color:#3b5998">Immediate Past President</h5>
 													</div>													
 													<!-- entry-content -->
 											</article>
 										</div>
-										
+										<?php } ?>
 									</div>	
-										
+									
+								<div class="col-md-12" style="padding:10px;">
+									<h4 class="widget-title">Vice Presidents</h4>
+									<?php foreach($exe_comite as $exe_com)
+								if($exe_com->role == 4 ) { ?>	
+									   <div class="col-md-4">
+												<article class="entry-item">
+													<div class="entry-thumb" style="text-align:center;">														
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>															
+													</div>													
+													<!-- entry-content -->
+												</article>
+										</div>
+									<?php } ?>
+									</div>
+								
+								<div class="col-md-12" style="padding:10px;">
+									<h4 class="widget-title">Joint Secreatries</h4>
+									<?php foreach($exe_comite as $exe_com)
+								if($exe_com->role == 5 ) { ?>	
+									   <div class="col-md-4">
+												<article class="entry-item">
+													<div class="entry-thumb" style="text-align:center;">														
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>
+															
+													</div>													
+													<!-- entry-content -->
+												</article>
+										</div>
+									<?php } ?>
+									</div>
+									
 									<h4 class="widget-title">Executive Committee</h4>
 									<ul class="clearfix">
-										<li style="height: 401px;display: none;">
-											<article class="entry-item">
-												<div class="entry-thumb">
-													<a href="index08b9.html?product=annika-embroidered-shirt" title="Aika Embroidered Shirt">
-														<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Aika Embroidered Shirt"> </a>
-												</div>
-												<div class="entry-content text-center">
-													<h6 class="entry-title"><a href="index08b9.html?product=annika-embroidered-shirt" title="Aika Embroidered Shirt">Aika Embroidered Shirt</a></h6>
-													
-												</div>
-												<!-- entry-content -->
-											</article>
-											<!-- entry-item -->
-										</li>
+									
+									<?php foreach($exe_comite as $exe_com)
+								if($exe_com->role == 6 ) { ?>	
 										<li style="height: 401px;">
 											<article class="entry-item">
 												<div class="entry-thumb">
-													<a href="indexb8b2.html?product=crepe-stretch-jordan" title="Crepe Stretch Jordan">
-														<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Crepe Stretch Jordan"> </a>
+													<a href="#" title="">
+														<img src="<?php echo $exe_com->profile_pic; ?>" alt="Crepe Stretch Jordan"> </a>
 												</div>
 												<div class="entry-content text-center">
-													<h6 class="entry-title"><a href="indexb8b2.html?product=crepe-stretch-jordan" title="Crepe Stretch Jordan">Crepe Stretch Jordan</a></h6>
+													<h6 class="entry-title"><?php echo $exe_com->name; ?></h6>
 													
 												</div>
 												<!-- entry-content -->
 											</article>
 											<!-- entry-item -->
 										</li>
+										<?php } ?>
 										<li style="height: 401px;">
 											<article class="entry-item">
 												<div class="entry-thumb">
@@ -234,6 +270,23 @@
 											<!-- entry-item -->
 										</li>																		
 									</ul>
+									
+										<div class="col-md-12" style="padding:10px;">
+									<?php foreach($exe_comite as $exe_com)
+								if(($exe_com->role > 6 )&& ($exe_com->role < 18 )) { ?>	
+									   <div class="col-md-4">
+												<article class="entry-item">
+													<div class="entry-thumb" style="text-align:center;">														
+															<img src="<?php echo $exe_com->profile_pic; ?>" style="border:solid #dadada  2px;">
+															<h4 style="margin:2px;"><?php echo $exe_com->name; ?></h4>
+															<h5 style="margin:0px;color:#3b5998"><?php echo $exe_com->roles; ?></h5>
+													</div>													
+													<!-- entry-content -->
+												</article>
+										</div>
+									<?php } ?>
+								</div>
+									
 									
 								</div>
 							</div>

@@ -1,5 +1,6 @@
 <?php
 	require_once('../../../wp-load.php');
+	require_once( ABSPATH . 'wp-admin/includes/file.php' );
 	global $wpdb;
 	
 	$file = $_FILES['fileupload'];
@@ -10,12 +11,13 @@
 		$movefile = wp_handle_upload( $file, $upload_overrides);
 		$url=$movefile['url'];
 		}
+	
 	$token=$wpdb->insert('wp_posts', array(
     'post_author' => get_current_user_id(),
-    'post_date' => date('Y-m-d', $_POST['pdate']),
+    'post_date' => $_POST['pdate'],
 	'post_content' => $_POST['comments'],
-	'post_title' => $_POST['news_heading']
-	'guid' => $_POST['$url'];
+	'post_title' => $_POST['news_heading'],
+	'guid' => $url
 ));
 
 if($token)

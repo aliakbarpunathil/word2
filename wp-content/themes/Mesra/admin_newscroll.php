@@ -78,32 +78,22 @@
                     <div class="main-col pull-left">
 
                         <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a>
-                            </span> / <span class="current-page">My Account</span></div>
+                            </span> / <span class="current-page">Scrolling News</span></div>
                         <!-- breadcrumb -->
 
                         <div id="page-10" class="page-content-area">
                             <div class="woocommerce">
 
-                                <h2>Add New News and Events</h2>
+                                <h2>Add News</h2>
 
-                                <form method="post" class="login" action = "news_post.php" enctype="multipart/form-data">
+                                <form method="post" class="login" action = "news_scroll_post.php">
 
-                                    <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">News Heading<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
-                                    </p>
-                                    <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Date<span class="required">*</span></label>
-                                       <input type="date" class="woocommerce-Input woocommerce-Input--text input-text" name="pdate"><br>
-                                    </p>
+                                   
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Description<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="comments"></textarea>
+                                        <label for="username">News<span class="required">*</span></label>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="news"></textarea>
                                     </p>
-									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Uplaod Image<span class="required">*</span></label>
-										<input type="file" name="fileupload" value="fileupload" id="fileupload">
-									</p>
+									
                                     <p class="form-row">                                        
                                         <input type="submit" class="woocommerce-Button button" name="login" value="Add New" />
                                     </p>                                    

@@ -1,6 +1,13 @@
 	<?php
 	require_once('../../../wp-load.php');
 	include dirname( __FILE__ ) .'/header.php' ;
+	
+		if(isset($_GET['user_id'])){
+			global $wpdb;
+			$details = $wpdb->get_row("SELECT * FROM wp_user_details WHERE user_id = ".$_GET['user_id']);
+			
+		}
+	
 	?>
 
     <div id="main-content">
@@ -87,67 +94,67 @@
 
                                 <h2>Membership Form</h2>
 
-                                <form method="post" class="login" action = "./membership_form_post.php">
+                                <form method="post" class="login" action = "./membership_form_post.php" enctype="multipart/form-data">
 
                                         <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Name<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="name" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="name" id="news_heading" value="<?php echo $details->name; ?>" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Occupation<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="occupation" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="occupation" id="news_heading" value="<?php echo $details->occupation; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Permanent Address<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="paddress" style="width:80%;height:150px;"></textarea>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="paddress" style="width:80%;height:150px;"><?php echo $details->paddress; ?></textarea>
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Office Address<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="oaddress" style="width:80%;height:150px;"></textarea>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="oaddress" style="width:80%;height:150px;"><?php echo $details->oaddress; ?></textarea>
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Telephone with STD code<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="phone" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="phone" id="news_heading" value="<?php echo $details->phone; ?>" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Mobile<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="mobile" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="mobile" id="news_heading" value="<?php echo $details->mobile; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">email-1<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email1" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email1" id="news_heading" value="<?php echo $details->email1; ?>" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">email-2<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email2" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email2" id="news_heading" value="<?php echo $details->email2; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Admission No:<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="admsn_no" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="admsn_no" id="news_heading" value="<?php echo $details->admsn_no; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Study in the Campus<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="year" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="year" id="news_heading" value="<?php echo $details->year; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Pass Out 10th<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout10" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout10" id="news_heading" value="<?php echo $details->passout10; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Pass Out 12th<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout12" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout12" id="news_heading" value="<?php echo $details->passout12; ?>" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Pass Out Others<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout_o" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout_o" id="news_heading" value="<?php echo $details->passout_o; ?>" />
                                     </p>									
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Any References<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="ref" style="width:80%;height:150px;"></textarea>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="ref" style="width:80%;height:150px;"><?php echo $details->ref; ?></textarea>
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Uplaod Profile Image<span class="required">*</span></label>
-										<input type="file" name="profile_pic" id="fileupload">
+										<input type="file" name="fileupload" id="fileupload">
 									</p>
                                     <p class="form-row">                                        
                                         <label for="rememberme" class="inline">

@@ -1,26 +1,28 @@
 <?php
 	require_once('../../../wp-load.php');
-	global $wpdb;
+	require_once( ABSPATH . 'wp-admin/includes/file.php' );
 	
-	$file = $_FILES['profile_pic'];
+	global $wpdb;
+	$file = $_FILES['fileupload'];
 	if($file['error'] === UPLOAD_ERR_OK)		
 		{
+			echo "hello";
 	/*	if ($input_file['size'] > 307200) */
 		$upload_overrides = array( 'test_form' => false );
 		$movefile = wp_handle_upload( $file, $upload_overrides);
 		$url=$movefile['url'];
 		}
 		
-	$userdata = array(
+/*	$userdata = array(
     'user_login'  =>  $_POST['login_name'],
     'user_pass'   =>  $_POST['password'],  // When creating an user, `user_pass` is expected.
 	'user_email' =>$_POST['email'],
 	'role' => 'subscriber'
 	);
 	$user_id=wp_insert_user( $userdata );
-	if($user_id){
+	*/
+	
 	$token=$wpdb->insert('wp_user_details', array(
-    'user_id' => $user_id,
     'name' => $_POST['name'],
 	'occupation' => $_POST['occupation'],
 	'paddress' => $_POST['paddress'],
@@ -36,7 +38,7 @@
 	'passout_o' => $_POST['passout_o'],
 	'profile_pic' => $url
 ));
-}
+
 if($token){
 	$to = $_POST['email'];
 	$subject = "Profile Created";
@@ -46,9 +48,9 @@ if($token){
 }
 
 if($token)
-	$redirect = add_query_arg( 'addevent', 'success', get_template_directory_uri().'/news_list.php' );
+	$redirect = add_query_arg( 'addevent', 'success', get_template_directory_uri().'/member_list.php' );
 else
-	$redirect = add_query_arg( 'addevent', 'failed', get_template_directory_uri().'/admin_newsevents.php' );
+	$redirect = add_query_arg( 'addevent', 'failed', get_template_directory_uri().'/membership_form.php' );
 	
 wp_redirect($redirect);
 	?>

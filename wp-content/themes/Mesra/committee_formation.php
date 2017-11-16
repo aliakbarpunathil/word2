@@ -126,7 +126,7 @@
                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="admsn_no" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                       <label for="username">Year of Study in the Campus<span class="required">*</span></label>
+                                       <label for="username"><span class="required">*</span></label>
                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="year" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">

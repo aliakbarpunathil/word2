@@ -62,27 +62,35 @@
                     <div class="main-col pull-left">
 
                         <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a>
-                            </span> / <span class="current-page" itemprop="title">Fashion</span></div>
+                            </span> / <span class="current-page" itemprop="title">News & Events</span></div>
                         <!-- breadcrumb -->
-
+				
 
                         <section class="entry-list">
                             <ul class="clearfix">
+							<?php 
+							$args = array(
+							'post_type'=> 'post',
+							);
+
+							query_posts( $args );
+							if ( have_posts() ) :
+							while ( have_posts() ) : the_post(); ?>
                                 <li>
                                     <article id="post-742" class="entry-item clearfix post-742 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-css tag-jquery tag-kopa">
                                         <div class="entry-thumb">
-                                            <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5ptlaobzhmovm2.jpg" alt="Haute Couture fact file bibendum" /></a>
+                                            <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo the_guid(); ?>" alt="Haute Couture fact file bibendum" /></a>
                                         </div>
                                         <!-- entry-thumb -->
 
                                         <div class="entry-content">
                                             <header>
-                                                <h6 class="entry-title" itemscope="" itemtype="http://schema.org/Event">
-                            <a itemprop="name" href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a>
+                                                <h6 class="entry-title" itemscope="" itemtype="">
+                            <a itemprop="name" href="#" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                         </h6>
-                                                <span class="entry-date pull-left"><i class="fa fa-pencil-square-o"></i>July 30, 2014</span>
+                                                <span class="entry-date pull-left"><i class="fa fa-pencil-square-o"></i><?php the_date(); ?></span>
                                                 <span class="entry-meta pull-left">&nbsp;/&nbsp;</span>
-                                                <span class="entry-author pull-left">By <a href="index3eae.html?author=5" title="Posts by Kim Dinh Van" rel="author">Kim Dinh Van</a></span>
+                                                
                                                 <ul class='kopa-rating clearfix'>
                                                     <li><span class="fa fa-star"></span></li>
                                                     <li><span class="fa fa-star"></span></li>
@@ -91,7 +99,7 @@
                                                     <li><span class="fa fa-star-o"></span></li>
                                                 </ul>
                                             </header>
-                                            <p>Curabitur ullamcorper, felis bibendum rutrum consectetur, justo felis elementum metus, sed feugiat nisl ligula non magna. Pellentesque vel accumsan odio. Pellentesque eu risus velit. Aenean velit mi, molestie et laoreet&hellip;</p>
+                                            <p><?php the_excerpt(); ?></p>
                                             <i class="fa fa-external-link search-icon"></i>
                                             <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum" class="more-link"><span>Read more</span></a>
                                         </div>
@@ -100,6 +108,9 @@
                                     </article>
                                     <!-- entry-item -->
                                 </li>
+								<?php endwhile; 
+								endif;
+								?>
                                 <li>
                                     <article id="post-773" class="entry-item clearfix post-773 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-category tag-custom tag-jquery tag-kopa">
                                         <div class="entry-thumb">

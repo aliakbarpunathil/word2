@@ -112,20 +112,19 @@
         <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a></span> / <span class="current-page">Contact us</span></div>    <!-- breadcrumb -->
     
         <div class="kp-map-wrapper">
-            <div id="kp-map" class="kp-map"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3056.3161139694716!2d-81.580288!3d40.001386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8837ca753e37cb2f%3A0xc5beee2fff1789fc!2s8775+Georgetown+Rd!5e0!3m2!1svi!2s!4v1404890922008" width="100%" height="100%"  frameborder="0" style="border:0"></iframe></div>
+            <div id="kp-map" class="kp-map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.242155149293!2d75.94693931435619!3d11.317002991956052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643aa3b05f1ef%3A0xec4ffa0ea89a5366!2sM.E.S+Raja+Residential+School+chathamangalam!5e0!3m2!1sen!2sin!4v1510840327061" width="100%" height="100%"  frameborder="0" style="border:0"></iframe></div>
         </div>
         <div id="kopa-contact-info-box">
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="contact-info">
-                        <p class="contact-address clearfix"><i class="fa fa-map-marker"></i><strong>Address:</strong><span>8775 Georgetown Road, Cambridge, Ohio, 43725, USA</span></p>
-                        <p class="contact-phone clearfix"><i class="fa fa-phone"></i><strong>Phone:</strong>+61 (0) 3 8376 6286</p>
-                        <p class="contact-fax clearfix"><i class="fa fa-fax"></i><strong>Fax:</strong>+61 (0) 3 8376 6286</p>
-                        <p class="contact-email clearfix"><i class="fa fa-envelope"></i><strong>Email:</strong><a href="mailto:kopatheme@gmail.com">kopatheme@gmail.com</a></p>
+                        <p class="contact-address clearfix"><i class="fa fa-map-marker"></i><strong>Address:</strong><span>MES Raja Residential School & Jr. College Alumni Association, Kallanthode, NIT Kozhikode, Kerala, India 673601</span></p>
+
+                        <p class="contact-email clearfix"><i class="fa fa-envelope"></i><strong>Email:</strong><a href="mailto:kopatheme@gmail.com">myschoolmesraja@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-8">
-                    <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.</p>
+                    <p> Ever since we left the school we have not had an organized effort for reunion except for a few casual meetings from which nothing much was materialised. This was the reason behind the formation of this association with the support of a lot of our old friends from around the world as an earnest attempt to get back to our old class mates and friends. We are grateful to a lot of people who have been very kind enough and took a lot of pain to initiate this venture and keep it going, in spite of their busy schedules. We seek your support, help and guidance on all fronts. This is just a small beginning and we have got a long way ahead of us..</p>
                 </div>
             </div>
         </div>
@@ -136,7 +135,29 @@
 
 
     <div id="page-15" class="page-content-area">
-        <div id="contact-box"><h4 class='contact-title clearfix'>Contact us</h4><form id="contact-form" class ="contact-form clearfix" action="http://upsidethemes.net/demo/news-maxx/wp-admin/admin-ajax.php" method="post"><p class="c-note">Your email address will not be published. Required fields are marked <span>*</span></p><div class='contact-left pull-left'><p class='input-block'><label for="contact_name" class="required"">Name  <span>*</span></label><input type="text" name="name" class="valid" id="contact_name" placeholder="Name * "></p><p class='input-block'><label for="contact_email" class="required"">Email  <span>*</span></label><input type="text" name="email" class="valid" id="contact_email" placeholder="Email *"></p><p class='input-block'><label for="contact_url" class="required"">Website </label><input type="text" name="url" class="valid" id="contact_url" placeholder="Website "></p></div><div class='contact-right pull-right'><p class='textarea-block'><label for="contact_message" class="required">Your message <span>*</span></label><textarea id="contact_message" name="message" style="overflow:auto;resize:vertical ;" cols="88" rows="6" placeholder="Your message  *"></textarea></p></div><div class="clear"></div><input type="hidden" name="action" value="kopa_send_contact"><input type="hidden" id="kopa_send_contact_nonce" name="kopa_send_contact_nonce" value="5681e07022" /><input type="hidden" name="_wp_http_referer" value="/demo/news-maxx/?page_id=15" /><p class='contact-button clearfix'><span class="submit-wrapper"><input type="submit" value="Submit" id="submit-contact" class="input-submit"></span></p></form><div id="response"></div></div><!--contact-box-->
+        <div id="contact-box"><h4 class='contact-title clearfix'>Contact us</h4>
+		<form id="contact-form" class ="contact-form clearfix" action="http://upsidethemes.net/demo/news-maxx/wp-admin/admin-ajax.php" method="post">
+		<p class="c-note">Your email address will not be published. Required fields are marked <span>*</span></p>
+		<div class='contact-left pull-left'>
+		<p class='input-block'>
+		<label for="contact_name" class="required"">Name  <span>*</span></label>
+		<input type="text" name="name" class="valid" id="contact_name" placeholder="Name * "></p>
+		<p class='input-block'>
+		<label for="contact_email" class="required"">Email  <span>*</span></label>
+		<input type="text" name="email" class="valid" id="contact_email" placeholder="Email *"></p>
+		<p class='input-block'><label for="contact_url" class="required"">Website </label>
+		<input type="text" name="url" class="valid" id="contact_url" placeholder="Website "></p></div>
+		<div class='contact-right pull-right'><p class='textarea-block'><label for="contact_message" class="required">Your message <span>*</span></label>
+		<textarea id="contact_message" name="message" style="overflow:auto;resize:vertical ;" cols="88" rows="6" placeholder="Your message  *"></textarea></p>
+		</div>
+		<div class="clear"></div>
+		<input type="hidden" name="action" value="kopa_send_contact">
+		<input type="hidden" id="kopa_send_contact_nonce" name="kopa_send_contact_nonce" value="5681e07022" />
+		<input type="hidden" name="_wp_http_referer" value="/demo/news-maxx/?page_id=15" />
+		<p class='contact-button clearfix'><span class="submit-wrapper">
+		<input type="submit" value="Submit" id="submit-contact" class="input-submit"></span></p>
+		</form>
+		<div id="response"></div></div><!--contact-box-->
     </div>
 
     
