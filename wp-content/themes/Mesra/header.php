@@ -120,7 +120,7 @@
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery.php">Gallery</a>                                
                             </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/excommitte.php">Membership</a>                               
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/member_list.php">Membership</a>                               
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1160"><a href="<?php echo get_template_directory_uri(); ?>/contact.php">Contact us</a></li>
 					</ul>
@@ -137,7 +137,7 @@
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery.php">Gallery</a>                                
                             </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/excommitte.php">Membership</a>                               
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/member_list.php">Membership</a>                               
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1160"><a href="<?php echo get_template_directory_uri(); ?>/contact.php">Contact us</a></li>
                         </ul>

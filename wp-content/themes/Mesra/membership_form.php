@@ -56,12 +56,12 @@
                         <div class="kp-headline clearfix">
                             <dl class="ticker-1 clearfix" data-speed="0.07">
                                 <dt style="display: none;">ticket title</dt>
-                                <dd><a href="indexc052.html?p=888" title="Villagers fight off Boko Haram militants">Villagers fight off Boko Haram militants</a></dd>
-                                <dd><a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a></dd>
-                                <dd><a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid">J-Lo’s divisive Versace dress-trouser hybrid</a></dd>
-                                <dd><a href="index0745.html?p=532" title="The Model Trainer: how to get legs like Gisele">The Model Trainer: how to get legs like Gisele</a></dd>
-                                <dd><a href="index336f.html?p=778" title="Extreme places to visit in the U.S.">Extreme places to visit in the U.S.</a></dd>
-                                <dd><a href="index61f2.html?p=693" title="Jodie Foster marries Alexandra Hedison">Jodie Foster marries Alexandra Hedison</a></dd>
+                                <dd><a href="#" title="Villagers fight off Boko Haram militants">Villagers fight off Boko Haram militants</a></dd>
+                                <dd><a href="#" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a></dd>
+                                <dd><a href="#" title="J-Lo’s divisive Versace dress-trouser hybrid">J-Lo’s divisive Versace dress-trouser hybrid</a></dd>
+                                <dd><a href="#" title="The Model Trainer: how to get legs like Gisele">The Model Trainer: how to get legs like Gisele</a></dd>
+                                <dd><a href="#" title="Extreme places to visit in the U.S.">Extreme places to visit in the U.S.</a></dd>
+                                <dd><a href="#" title="Jodie Foster marries Alexandra Hedison">Jodie Foster marries Alexandra Hedison</a></dd>
                             </dl>
                         </div>
                     </div>
@@ -87,67 +87,67 @@
 
                                 <h2>Membership Form</h2>
 
-                                <form method="post" class="login">
+                                <form method="post" class="login" action = "./membership_form_post.php">
 
-                                    <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+                                        <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Name<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="name" id="news_heading" value="" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Occupation<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="occupation" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Permanent Address<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="comments" style="width:80%;height:150px;"></textarea>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="paddress" style="width:80%;height:150px;"></textarea>
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Office Address<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="comments" style="width:80%;height:150px;"></textarea>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="oaddress" style="width:80%;height:150px;"></textarea>
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Telephone with STD code<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="phone" id="news_heading" value="" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Mobile<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="mobile" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">email-1<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email1" id="news_heading" value="" />
                                     </p>
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">email-2<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email2" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Admission No:<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="admsn_no" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Study in the Campus<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="year" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Pass Out 10th<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout10" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Pass Out 12th<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout12" id="news_heading" value="" />
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                        <label for="username">Year of Pass Out Others<span class="required">*</span></label>
-                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="passout_o" id="news_heading" value="" />
                                     </p>									
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Any References<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="comments" style="width:80%;height:150px;"></textarea>
+                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="ref" style="width:80%;height:150px;"></textarea>
                                     </p>
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Uplaod Profile Image<span class="required">*</span></label>
-										<input type="file" name="fileupload" value="fileupload" id="fileupload">
+										<input type="file" name="profile_pic" id="fileupload">
 									</p>
                                     <p class="form-row">                                        
                                         <label for="rememberme" class="inline">
@@ -169,11 +169,11 @@
                             <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
                                 </div> 
 								<div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
                                 </div> 								
                             </article>                            
                         </div>                       

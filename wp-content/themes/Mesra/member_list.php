@@ -42,12 +42,12 @@
                         <div class="kp-headline clearfix">
                             <dl class="ticker-1 clearfix" data-speed="0.07">
                                 <dt style="display: none;">ticket title</dt>
-                                <dd><a href="indexc052.html?p=888" title="Villagers fight off Boko Haram militants">Villagers fight off Boko Haram militants</a></dd>
-                                <dd><a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a></dd>
-                                <dd><a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid">J-Lo’s divisive Versace dress-trouser hybrid</a></dd>
-                                <dd><a href="index0745.html?p=532" title="The Model Trainer: how to get legs like Gisele">The Model Trainer: how to get legs like Gisele</a></dd>
-                                <dd><a href="index336f.html?p=778" title="Extreme places to visit in the U.S.">Extreme places to visit in the U.S.</a></dd>
-                                <dd><a href="index61f2.html?p=693" title="Jodie Foster marries Alexandra Hedison">Jodie Foster marries Alexandra Hedison</a></dd>
+                                <dd><a href="#" title="Villagers fight off Boko Haram militants">Villagers fight off Boko Haram militants</a></dd>
+                                <dd><a href="#" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a></dd>
+                                <dd><a href="#" title="J-Lo’s divisive Versace dress-trouser hybrid">J-Lo’s divisive Versace dress-trouser hybrid</a></dd>
+                                <dd><a href="#" title="The Model Trainer: how to get legs like Gisele">The Model Trainer: how to get legs like Gisele</a></dd>
+                                <dd><a href="#" title="Extreme places to visit in the U.S.">Extreme places to visit in the U.S.</a></dd>
+                                <dd><a href="#" title="Jodie Foster marries Alexandra Hedison">Jodie Foster marries Alexandra Hedison</a></dd>
                             </dl>
                         </div>
                     </div>
@@ -71,25 +71,25 @@
 						 <h4 style="text-align:right;">
 							<form action="/action_page.php">
 							  Search User Here:
-							  <input type="search" name="googlesearch" placeholder="Name, email, Phone, Adm No, etc...." style="font-size:12px;width:300px">							 
+							  <input type="search" name="search" id = "myInput" onkeyup="myFunction()" placeholder="Name, email, Phone, Adm No, etc...." style="font-size:12px;width:300px">							 
 							</form>
 						 </h4>
                         <section class="entry-list" style="padding-top:15px;border-top:solid #9a9a9a 3px;">
-                            <ul class="clearfix">
+                            <ul class="clearfix" id = "myUL">
                                 <li>
                                     <article id="post-742" class="entry-item clearfix post-742 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-css tag-jquery tag-kopa">
                                         <div class="entry-thumb">
-                                            <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum"><img src="wp-content/uploads/bfi_thumb/Smile-2xau11nw5ptlaobzhmovm2.jpg" alt="Haute Couture fact file bibendum" /></a>
+                                            <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5ptlaobzhmovm2.jpg" alt="Haute Couture fact file bibendum" /></a>
                                         </div>
                                         <!-- entry-thumb -->
 										
                                         <div class="entry-content" style="padding:0px;">
                                             <header>
-                                                <h6 class="entry-title" style="margin-bottom:0px;">Name: Bibin George</h6>
-												<div class="">Occupation: Software Engineer</div>
-                                                <div>email: sample@gmail.com</div>
-												<div>phone: 123456789</div> 
-												<div>Adm No:123456</div>
+                                                <h6 class="entry-title search_box" style="margin-bottom:0px;" id="mname">Name: Bibin George</h6>
+												<div >Occupation: Software Engineer</div>
+                                                <div class="search_box">email: sample@gmail.com</div>
+												<div class="search_box">phone: 123456789</div> 
+												<div class="search_box">Adm No:123456</div>
 												<div>10th Passout:2017</div> 												
                                             </header>
                                             <h6 style="margin:0px;">Permanent Address</h6>
@@ -105,18 +105,18 @@
 								<li>
                                     <article id="post-742" class="entry-item clearfix post-742 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-css tag-jquery tag-kopa">
                                         <div class="entry-thumb">
-                                            <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum"><img src="wp-content/uploads/bfi_thumb/Smile-2xau11nw5ptlaobzhmovm2.jpg" alt="Haute Couture fact file bibendum" /></a>
+                                            <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5ptlaobzhmovm2.jpg" alt="Haute Couture fact file bibendum" /></a>
                                         </div>
                                         <!-- entry-thumb -->
 										
                                         <div class="entry-content" style="padding:0px;">
                                             <header>
-                                                <h6 class="entry-title" style="margin-bottom:0px;">Name: Bibin George</h6>
-												<div class="">Occupation: Software Engineer</div>
-                                                <div>email: sample@gmail.com</div>
-												<div>phone: 123456789</div> 
-												<div>Adm No:123456</div>
-												<div>10th Passout:2017</div> 												
+                                                      <h6 class="entry-title search_box" style="margin-bottom:0px;" id="mname">Name: Bibin George</h6>
+												<div >Occupation: Software Engineer</div>
+                                                <div class="search_box">email: sample@gmail.com</div>
+												<div class="search_box">phone: 123456789</div> 
+												<div class="search_box">Adm No:123456</div>
+												<div>10th Passout:2017</div> 											
                                             </header>
                                             <h6 style="margin:0px;">Permanent Address</h6>
 											<p>Thekkathu(H), Cholathadam P.O, Poonjar Via, Kottayam Pin-686582</p>
@@ -144,7 +144,7 @@
                             <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
                                 </div>                                <!-- entry-thumb -->
                                
                                 <!-- entry-content -->
@@ -152,7 +152,7 @@
 							 <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
                                 </div>                                <!-- entry-thumb -->
                                
                                 <!-- entry-content -->
@@ -172,4 +172,26 @@
             <!-- main-section -->
         </div>
         <!-- main-content -->
+		
+<script>
+	function myFunction() {
+		var input, filter, ul, li, a, i,j;
+		input = document.getElementById("myInput");
+		filter = input.value.toUpperCase();
+		var li_list = document.getElementById("node").querySelectorAll("#myUL>li");
+			var x = document.getElementsByClassName("search_box");
+			var i;
+			for (i = 0; i < li_list.length; i++) {
+				x = li_list[i].getElementsByClassName("search_box");
+				for(j = 0; j < x.length; j++){
+					a = x[i];
+					if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+						li_list[i].style.display = "block";
+					} else {
+						li_list[i].style.display = "none";
+					}	
+				}
+			}	
+	}
+</script>
              <?php include './footer.php' ?>
