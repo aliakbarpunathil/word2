@@ -3,6 +3,7 @@
 	require_once( ABSPATH . 'wp-admin/includes/file.php' );
 	
 	global $wpdb;
+	$url = get_home_url().'/wp-content/uploads/user.jpg'
 	$file = $_FILES['fileupload'];
 	if($file['error'] === UPLOAD_ERR_OK)		
 		{
@@ -48,9 +49,9 @@ if($token){
 }
 
 if($token)
-	$redirect = add_query_arg( 'addevent', 'success', get_template_directory_uri().'/member_list.php' );
+	$redirect = add_query_arg( 'addmember', 'success', get_template_directory_uri().'/member_list.php' );
 else
-	$redirect = add_query_arg( 'addevent', 'failed', get_template_directory_uri().'/membership_form.php' );
+	$redirect = add_query_arg( 'addmember', 'failed', get_template_directory_uri().'/membership_form.php' );
 	
 wp_redirect($redirect);
 	?>

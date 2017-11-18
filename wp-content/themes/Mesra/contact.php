@@ -112,22 +112,9 @@
         <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a></span> / <span class="current-page">Contact us</span></div>    <!-- breadcrumb -->
     
         <div class="kp-map-wrapper">
-            <div id="kp-map" class="kp-map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.242155149293!2d75.94693931435619!3d11.317002991956052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643aa3b05f1ef%3A0xec4ffa0ea89a5366!2sM.E.S+Raja+Residential+School+chathamangalam!5e0!3m2!1sen!2sin!4v1510840327061" width="100%" height="100%"  frameborder="0" style="border:0"></iframe></div>
+            <div id="kp-map" class="kp-map"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3056.3161139694716!2d-81.580288!3d40.001386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8837ca753e37cb2f%3A0xc5beee2fff1789fc!2s8775+Georgetown+Rd!5e0!3m2!1svi!2s!4v1404890922008" width="100%" height="100%"  frameborder="0" style="border:0"></iframe></div>
         </div>
-        <div id="kopa-contact-info-box">
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="contact-info">
-                        <p class="contact-address clearfix"><i class="fa fa-map-marker"></i><strong>Address:</strong><span>MES Raja Residential School & Jr. College Alumni Association, Kallanthode, NIT Kozhikode, Kerala, India 673601</span></p>
-
-                        <p class="contact-email clearfix"><i class="fa fa-envelope"></i><strong>Email:</strong><a href="mailto:kopatheme@gmail.com">myschoolmesraja@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-8">
-                    <p> Ever since we left the school we have not had an organized effort for reunion except for a few casual meetings from which nothing much was materialised. This was the reason behind the formation of this association with the support of a lot of our old friends from around the world as an earnest attempt to get back to our old class mates and friends. We are grateful to a lot of people who have been very kind enough and took a lot of pain to initiate this venture and keep it going, in spite of their busy schedules. We seek your support, help and guidance on all fronts. This is just a small beginning and we have got a long way ahead of us..</p>
-                </div>
-            </div>
-        </div>
+       
         <!-- kopa-contact-info-box -->
 
     
@@ -135,8 +122,7 @@
 
 
     <div id="page-15" class="page-content-area">
-        <div id="contact-box"><h4 class='contact-title clearfix'>Contact us</h4>
-		<form id="contact-form" class ="contact-form clearfix" action="http://upsidethemes.net/demo/news-maxx/wp-admin/admin-ajax.php" method="post">
+        <div id="contact-box"><h4 class='contact-title clearfix'>Contact us</h4><form id="contact-form" class ="contact-form clearfix" action="<?php echo get_template_directory_uri(); ?>/contact_post.php" method="post">
 		<p class="c-note">Your email address will not be published. Required fields are marked <span>*</span></p>
 		<div class='contact-left pull-left'>
 		<p class='input-block'>
@@ -156,8 +142,7 @@
 		<input type="hidden" name="_wp_http_referer" value="/demo/news-maxx/?page_id=15" />
 		<p class='contact-button clearfix'><span class="submit-wrapper">
 		<input type="submit" value="Submit" id="submit-contact" class="input-submit"></span></p>
-		</form>
-		<div id="response"></div></div><!--contact-box-->
+		</form><div id="response"></div></div><!--contact-box-->
     </div>
 
     
@@ -165,26 +150,27 @@
 </div>
 <!-- main-col -->
 
-<div class="sidebar widget-area-2 pull-left">
-        
-    
-            <div class="widget kopa-article-list-1-widget clearfix">
-            <h4 class="widget-title">Business</h4>
+		<div class="sidebar widget-area-2 pull-left">
+           <div class="widget kopa-article-list-1-widget clearfix">
+                            <h4 class="widget-title">Sponsored by </h4>
                             <article class="last-item clearfix">
                                 <div class="entry-thumb">
-                                    <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">
-                                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Haute Couture fact file bibendum" />                                       </a>
-                                </div>                              
+                                    <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/gate.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                </div>
+                                <!-- entry-thumb -->
+                                <!-- entry-content -->
                             </article>
-							<article class="last-item clearfix">
+                            <article class="last-item clearfix">
                                 <div class="entry-thumb">
-                                    <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">
-                                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Haute Couture fact file bibendum" />                                       </a>
-                                </div>                              
+                                    <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/resort.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                </div>
+                                <!-- entry-thumb -->
+                                <!-- entry-content -->
                             </article>
             </div>
-    
-</div>
+		</div>
 <!-- widget-area-2 -->
 
 <div class="clear"></div>
@@ -197,4 +183,4 @@
 </div>
 <!-- main-content -->
   <!-- main-content -->
-<?php include './footer.php' ?>
+      <?php include './footer.php' ?>

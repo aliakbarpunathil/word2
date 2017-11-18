@@ -1,145 +1,51 @@
-	<?php
-	require_once('../../../wp-load.php');
-	include dirname( __FILE__ ) .'/header.php' ;
-	?>
-    <div id="main-content">
+<?php
+require( '../../../wp-load.php' );
+if ( ! function_exists( 'wp_handle_upload' ) ) {
+    require_once( ABSPATH . 'wp-admin/includes/file.php' );
+}
+global $wpdb;
+//print_r($_FILES['files']);
 
-        <div class="widget-area-1">
+$files  = rearray($_FILES['fileupload']);
 
-            <!-- widget -->
+foreach($files as $input_file){
+if ($input_file['error'] === UPLOAD_ERR_OK) { 
 
-            <div class="stripe-box">
 
-                <div class="wrapper">
+$upload_overrides = array( 'test_form' => false );
+$file=$input_file;
+$movefile = wp_handle_upload( $file, $upload_overrides);
+$url=$movefile['url'];
+}
+elseif ($input_file['error'] === UPLOAD_ERR_NO_FILE) { 
 
-                    <div class="left-color"></div>
+}
+$token=$wpdb->insert('wp_gallery', array(
+    'author' => get_current_user_id(),
+    'image' => $url,
+	'album' => $_POST['album_id']
+));
+}
 
-                   
-                    <!-- widget -->
-                    <!-- top new -->
+echo $url;
+die;
+if($token)
+	$redirect = add_query_arg( 'register', 'success', get_template_directory_uri().'/gallery-category.php' );
+else
+	$redirect = add_query_arg( 'register', 'fail', get_template_directory_uri().'/gallery-category.php');
+wp_redirect( $redirect );
 
-                    <div class="right-color"></div>
+function rearray(&$file_post) {
+	 $file_ary = array();
+		$file_count = count($file_post['name']);
+		$file_keys = array_keys($file_post);
 
-                    
-                    <!-- social-links-container -->
+		for ($i=0; $i<$file_count; $i++) {
+			foreach ($file_keys as $key) {
+				$file_ary[$i][$key] = $file_post[$key][$i];
+        }
+    }
 
-                    <div class="weather-widget-wrapper">
-                        <span class="triangle-1st"></span>
-                        <span class="triangle-2nd"></span>
-                        <div class="widget widget_awesomeweatherwidget masonry-brick">
-                            <div class="awesome-weather-wrap awecf custom awe_with_stats awe_wide" id="awesome-weather-vietnam">
-                                <div class="awesome-weather-header">
-                                    No Data </div>
-                                <div class="awesome-weather-current-temp">
-                                    <i class="icon-weather wi wi-day-sunny"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- weather-widget-wrapper -->
-
-                    </div>
-                    <!-- wrapper -->
-
-                </div>
-                <!-- stripe-box -->
-
-            </div>
-            <!-- widget-area-1 -->
-
-            <div class="bn-box">
-
-                <div class="wrapper clearfix">
-
-                    <div class="kp-headline-wrapper clearfix">
-                        <span class="kp-headline-title">BREAKING NEWS</span>
-                        <div class="kp-headline clearfix">
-                            <dl class="ticker-1 clearfix" data-speed="0.07">
-                                <dt style="display: none;">ticket title</dt>
-                                <dd><a href="indexc052.html?p=888" title="Villagers fight off Boko Haram militants">Villagers fight off Boko Haram militants</a></dd>
-                                <dd><a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a></dd>
-                                <dd><a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid">J-Lo’s divisive Versace dress-trouser hybrid</a></dd>
-                                <dd><a href="index0745.html?p=532" title="The Model Trainer: how to get legs like Gisele">The Model Trainer: how to get legs like Gisele</a></dd>
-                                <dd><a href="index336f.html?p=778" title="Extreme places to visit in the U.S.">Extreme places to visit in the U.S.</a></dd>
-                                <dd><a href="index61f2.html?p=693" title="Jodie Foster marries Alexandra Hedison">Jodie Foster marries Alexandra Hedison</a></dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <!-- kp-headline-wrapper -->
-
-                </div>
-                <!-- wrapper -->
-
-            </div>
-            <!-- bn-box -->
-
-            <section class="main-section">
-                <div class="wrapper clearfix">
-
-                    <div class="main-col pull-left">
-
-                        <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a>
-                            </span> / <span class="current-page">My Account</span></div>
-                        <!-- breadcrumb -->
-
-                        <div id="page-10" class="page-content-area">
-                            <div class="woocommerce">
-
-                                <h2>Add New News and Events</h2>
-
-                                <form method="post" class="login" action = "news_post.php">
-
-                                    <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">News Heading<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
-                                    </p>
-                                    <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Date<span class="required">*</span></label>
-                                       <input type="date" class="woocommerce-Input woocommerce-Input--text input-text" name="pdate" max="1979-12-31"><br>
-                                    </p>
-									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Description<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="comments"></textarea>
-                                    </p>
-									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Uplaod Image<span class="required">*</span></label>
-										<input type="file" name="fileupload" value="fileupload" id="fileupload">
-									</p>
-                                    <p class="form-row">                                        
-                                        <input type="submit" class="woocommerce-Button button" name="login" value="Add New" />
-                                    </p>                                    
-                                </form>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- main-col -->
-
-                    <div class="sidebar widget-area-2 pull-left">
-
-                        <div class="widget kopa-article-list-1-widget clearfix">
-                            <h4 class="widget-title">Business</h4>
-                            <article class="last-item clearfix">
-                                <div class="entry-thumb">
-                                    <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
-                                </div> 
-								<div class="entry-thumb">
-                                    <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
-                                </div> 								
-                            </article>                            
-                        </div>                       
-                    </div>
-                    <!-- widget-area-2 -->
-
-                    <div class="clear"></div>
-
-                </div>
-                <!-- wrapper -->
-
-            </section>
-            <!-- main-section -->
-        </div>
-        <!-- main-content -->
-       <?php include './footer.php' ?>
+    return $file_ary;
+}
+?>

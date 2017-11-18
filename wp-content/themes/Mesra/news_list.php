@@ -62,7 +62,11 @@
                     <div class="main-col pull-left">
 
                         <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a>
-                            </span> / <span class="current-page" itemprop="title">News & Events</span></div>
+                            </span> / <span class="current-page" itemprop="title">News & Events</span>
+							<?php if(is_super_admin()){ ?>					
+							<a href="<?php echo get_template_directory_uri(); ?>/admin_newsevents.php" title="" class="more-link" style="float:right"><span>Add News and Events</span></a>
+							<?php } ?>
+							</div>
                         <!-- breadcrumb -->
 				
 
@@ -79,8 +83,14 @@
                                 <li>
                                     <article id="post-742" class="entry-item clearfix post-742 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-css tag-jquery tag-kopa">
                                         <div class="entry-thumb">
-                                            <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo the_guid(); ?>" alt="Haute Couture fact file bibendum" /></a>
-                                        </div>
+                                            <a href="#" title="Haute Couture fact file bibendum"><img src="<?php echo get_the_guid(); ?>" alt="Haute Couture fact file bibendum" /></a>
+		<?php if(is_super_admin()){ ?>												
+											<span>
+													<a href="<?php echo get_template_directory_uri(); ?>/admin_newsevents.php?id=<?php echo get_the_ID(); ?>" title="" class="more-link"><span>Edit</span></a>
+													<a href="<?php echo get_template_directory_uri(); ?>/news_delete_post.php?id=<?php echo get_the_ID(); ?>" title="" class="more-link"><span>Delete</span></a>
+												</span>
+												<?php } ?>
+									   </div>
                                         <!-- entry-thumb -->
 
                                         <div class="entry-content">
@@ -101,7 +111,7 @@
                                             </header>
                                             <p><?php the_excerpt(); ?></p>
                                             <i class="fa fa-external-link search-icon"></i>
-                                            <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum" class="more-link"><span>Read more</span></a>
+                                            <a href="<?php echo get_template_directory_uri(); ?>/news_readmore.php?id=<?php get_the_ID() ;?>" title="Haute Couture fact file bibendum" class="more-link"><span>Read more</span></a>
                                         </div>
                                         <!-- entry-content -->
 
@@ -115,7 +125,13 @@
                                     <article id="post-773" class="entry-item clearfix post-773 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion category-technology tag-awesome tag-category tag-custom tag-jquery tag-kopa">
                                         <div class="entry-thumb">
                                             <a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/unsplash-49-2xau11nw5ptlaobzhmovm2.jpg" alt="J-Lo’s divisive Versace dress-trouser hybrid" /></a>
-                                        </div>
+									<?php if(is_super_admin()){ ?>											
+											<span>
+												<a href="#" title="" class="more-link"><span>Edit</span></a>
+												<a href="#" title="" class="more-link"><span>Delete</span></a>
+											</span>	
+									<?php } ?>
+									   </div>
                                         <!-- entry-thumb -->
 
                                         <div class="entry-content">
@@ -136,7 +152,7 @@
                                             </header>
                                             <p>Curabitur ullamcorper, felis bibendum rutrum consectetur, justo felis elementum metus, sed feugiat nisl ligula non magna. Pellentesque vel accumsan odio. Pellentesque eu risus velit. Aenean velit mi, molestie et laoreet&hellip;</p>
                                             <i class="fa fa-external-link search-icon"></i>
-                                            <a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid" class="more-link"><span>Read more</span></a>
+                                            <a href="<?php echo get_template_directory_uri(); ?>/news_readmore.php" title="J-Lo’s divisive Versace dress-trouser hybrid" class="more-link"><span>Read more</span></a>
                                         </div>
                                         <!-- entry-content -->
 
@@ -250,11 +266,11 @@
                     <div class="sidebar widget-area-2 pull-left">
 
                         <div class="widget kopa-article-list-1-widget clearfix">
-                            <h4 class="widget-title">Business</h4>
+                            <h4 class="widget-title">Sponsored by</h4>
                             <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                         <img src="<?php echo get_home_url(); ?>/wp-content/gate.jpg" alt="Haute Couture fact file bibendum" /> </a>
                                 </div>                                <!-- entry-thumb -->
                                
                                 <!-- entry-content -->
@@ -262,7 +278,7 @@
 							 <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                         <img src="<?php echo get_home_url(); ?>/wp-content/resort.jpg" alt="Haute Couture fact file bibendum" /> </a>
                                 </div>                                <!-- entry-thumb -->
                                
                                 <!-- entry-content -->

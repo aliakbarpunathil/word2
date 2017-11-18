@@ -84,25 +84,18 @@
                         <div id="page-10" class="page-content-area">
                             <div class="woocommerce">
 
-                                <h2>Add New News and Events</h2>
+                                <h2>Add Gallery</h2>
 
-                                <form method="post" class="login" action = "news_post.php">
+                                <form method="post" class="login" action = "<?php echo get_template_directory_uri(); ?>/admin_gallery_post.php" enctype="multipart/form-data">
 
                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Album<span class="required">*</span></label>
-                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="news_heading" value="" />
+                                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="news_heading" id="album" value="" />
                                     </p>
-                                    <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Date<span class="required">*</span></label>
-                                       <input type="date" class="woocommerce-Input woocommerce-Input--text input-text" name="pdate" max="1979-12-31"><br>
-                                    </p>
-									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                        <label for="username">Description<span class="required">*</span></label>
-                                       <textarea class="woocommerce-Input woocommerce-Input--text " name="comments"></textarea>
-                                    </p>
+                                   
 									<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Uplaod Image<span class="required">*</span></label>
-										<input type="file" name="fileupload" value="fileupload" id="fileupload">
+										<input type="file" name="fileupload" value="fileupload" id="fileupload" multiple>
 									</p>
                                     <p class="form-row">                                        
                                         <input type="submit" class="woocommerce-Button button" name="login" value="Add New" />

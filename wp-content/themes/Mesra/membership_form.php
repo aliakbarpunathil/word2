@@ -94,8 +94,8 @@
 
                                 <h2>Membership Form</h2>
 
-                                <form method="post" class="login" action = "./membership_form_post.php" enctype="multipart/form-data">
-
+                                <form method="post" class="login" action = "<?php if($details){ echo get_template_directory_uri(); ?>/membership_form_edit_post.php <?php } else { echo get_template_directory_uri(); ?>/membership_form_post.php" enctype="multipart/form-data">
+										<input type="hidden" value="<?php echo $details->user_id; ?>" name = "user_id">
                                         <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                                         <label for="username">Name<span class="required">*</span></label>
                                         <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="name" id="news_heading" value="<?php echo $details->name; ?>" />

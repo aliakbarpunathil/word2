@@ -15,11 +15,12 @@ $files  = rearray($_FILES['files']);
 		$upload_overrides = array( 'test_form' => false );
 		$movefile = wp_handle_upload( $file, $upload_overrides);
 		$url=$movefile['url'];
-		
+		echo $url;
+		die;
 	$token=$wpdb->insert('wp_gallery', array(
     'author' => get_current_user_id(),
-    'album' => $_POST['album']
-	'image' => $_POST['$url'];
+    'album' => $_POST['album'],
+	'image' => $url
 ));
 }
 }
@@ -38,9 +39,9 @@ function rearray(&$file_post) {
 }
 
 if($token)
-	$redirect = add_query_arg( 'addevent', 'success', get_template_directory_uri().'/news_list.php' );
+	$redirect = add_query_arg( 'addalbum', 'success', get_template_directory_uri().'/admin_gallery.php' );
 else
-	$redirect = add_query_arg( 'addevent', 'failed', get_template_directory_uri().'/admin_newsevents.php' );
+	$redirect = add_query_arg( 'addalbum', 'failed', get_template_directory_uri().'/gallery_category.php' );
 	
 wp_redirect($redirect);
 ?>

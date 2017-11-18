@@ -2,8 +2,8 @@
 	require_once('../../../wp-load.php');
 	include dirname( __FILE__ ) .'/header.php' ;
 	global $wpdb;
-	$exe_comite = $wpdb->get_results("SELECT u.name, u.profile_pic, u.role, r.role roles FROM wp_user_details u JOIN user_roles r ON u.role = r.id");
-	
+	$exe_comite = $wpdb->get_results("SELECT name, profile_pic, role FROM wp_user_details ");
+
 	?>
 
     <div id="main-content">
@@ -118,7 +118,7 @@
                     <div class="main-col pull-left">
 
                         <div class="breadcrumb clearfix"><span>You are here: </span> <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://upsidethemes.net/demo/news-maxx"><span itemprop="title">Home</span></a>
-                            </span> / <span class="current-page">Gallery</span></div>
+                            </span> / <span class="current-page">Executive Committee</span></div>
                         <!-- breadcrumb -->
 
                         <!-- widget -->
@@ -129,8 +129,9 @@
 								<div id="kopa_widget_woocommerce_products-1" class="widget kopa-product-list-widget">
 								<?php 
 								foreach($exe_comite as $exe_com)
-								if($exe_com->role == "1" ) { ?>	
-								
+								if($exe_com->role == 1 ) { ?>	
+									
+									
 									<div class="col-md-12" style="padding:10px;">
 									    <div class="col-md-4"></div>
 										<div class="col-md-4">
@@ -241,34 +242,7 @@
 											<!-- entry-item -->
 										</li>
 										<?php } ?>
-										<li style="height: 401px;">
-											<article class="entry-item">
-												<div class="entry-thumb">
-													<a href="indexfd45.html?product=joules-maryse-dress" title="Joules Maryse Dress">
-														<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Joules Maryse Dress"> </a>
-												</div>
-												<div class="entry-content text-center">
-													<h6 class="entry-title"><a href="indexfd45.html?product=joules-maryse-dress" title="Joules Maryse Dress">Joules Maryse Dress</a></h6>
-													
-												</div>
-												<!-- entry-content -->
-											</article>
-											<!-- entry-item -->
-										</li>
-										<li style="height: 401px;">
-											<article class="entry-item">
-												<div class="entry-thumb">
-													<a href="index1dd2.html?product=carven-angora-sweater" title="Carven Sweater">
-														<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Carven Sweater"> </a>
-												</div>
-												<div class="entry-content text-center">
-													<h6 class="entry-title"><a href="index1dd2.html?product=carven-angora-sweater" title="Carven Sweater">Carven Sweater</a></h6>
-													
-												</div>
-												<!-- entry-content -->
-											</article>
-											<!-- entry-item -->
-										</li>																		
+																								
 									</ul>
 									
 										<div class="col-md-12" style="padding:10px;">
@@ -300,15 +274,16 @@
                     <div class="sidebar widget-area-2 pull-left">
 
                         <div class="widget kopa-article-list-1-widget clearfix">
-                            <h4 class="widget-title">Business</h4>
+                            <h4 class="widget-title">Sponsored By</h4>
                             <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">
-                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Haute Couture fact file bibendum" /> </a>
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/gate.jpg" alt="Haute Couture fact file bibendum" /> 
+									</a>
                                 </div>
                                 <div class="entry-thumb">
                                     <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">
-                                        <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bfi_thumb/Smile-2xau11nw5u1kn1ypfydfyi.jpg" alt="Haute Couture fact file bibendum" /> </a>
+                                        <img src="<?php echo get_home_url(); ?>/wp-content/resort.jpg" alt="Haute Couture fact file bibendum" /> </a>
                                 </div>
                             </article>
                             <!-- last-item -->

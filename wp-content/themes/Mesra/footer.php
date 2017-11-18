@@ -1,21 +1,12 @@
-<?php 
-/*
-footer file
-
-*/
-
-?>
  <section class="dark-box">
 
             <div class="wrapper">
 
-               
                 <!-- bottom-nav -->
 
             </div>
             <!-- wrapper -->
         </section>
-        <!-- dark-box -->
         <section id="bottom-sidebar">
 
             <div class="wrapper">
@@ -23,9 +14,7 @@ footer file
                 <div class="row">
                     <!-- position 9 -->
                     <div class="col-md-3 col-sm-3 widget-area-9">
-                        <div class="bottom-logo">
-                            <a href="http://upsidethemes.net/demo/news-maxx" title="News-Maxx WordPress theme"><img id="logo-image2" src="<?php echo get_home_url(); ?>/wp-content/themes/news-maxx/images/sample/logo1.png" alt="News-Maxx WordPress theme" /></a>
-                        </div>
+                        
                         <!-- bottom-logo -->
 
                         <div id="kopa_widget_social_share-5" class="widget kopa-social-links-widget"> <span class="widget-title no-title no-title-social"></span>
@@ -52,20 +41,20 @@ footer file
                                     <a href="#" target="_self" title="Youtube" rel="nofollow" class="fa fa-youtube"></a>
                                 </li>
                             </ul>
-                        </div>                        
+                        </div>
 
                     </div>
                     <!-- col-md-3 -->
 
                     <!-- position 10 -->
                     <div class="col-md-6 col-sm-3 widget-area-10">
-                         <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmyschoolmesraja&width=630&height=590&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" allowtransparency="true"></iframe>
-                       
+                        <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmyschoolmesraja&width=630&height=590&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" allowtransparency="true"></iframe>
+
                     </div>
                     <!-- col-md-3 -->
 
                     <!-- position 11 -->
-                    
+
                     <!-- col-md-3 -->
 
                     <!-- position 12 -->
@@ -74,14 +63,11 @@ footer file
                         <div id="kopa_widget_contact_info-2" class="widget kopa-contact-info-widget">
                             <h4 class="widget-title">Contact                                    <span>Us</span>
                             </h4>
-                           <div class="contact-info">
-                                <p class="clearfix"><i class="fa fa-envelope"></i><strong>Email: </strong><a href="mailto:kopatheme@kopasoft.com">kopatheme@kopasoft.com</a></p>
+                            <div class="contact-info">
 
-                                <p class="clearfix"><i class="fa fa-phone"></i><strong>Phone: </strong>+84.786599233</p>
-
-                                <p class="clearfix"><i class="fa fa-print"></i><strong>Fax: </strong>+84.786599232</p>
-
-                                <p class="clearfix"><i class="fa fa-map-marker"></i><strong>Address: </strong><span>Second floor, B7+B9 building, 72 arey, Tran Thai Tong, Cau Giay, Hanoi</span></p>
+                                <p class="clearfix"><strong>MES Raja Residential School & Jr. College Alumni Association</strong></p>
+                                <p class="clearfix"><span>Kallanthode, NIT Kozhikode, Kerala, India 673601.</span></p>
+                                <p class="clearfix"><i class="fa fa-envelope"></i><strong>Email: </strong><a href="mailto:myschoolmesraja@gmail.com">myschoolmesraja@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -108,11 +94,11 @@ footer file
         <!-- kopa-page-footer -->
 
         <input type="hidden" id="kopa_set_view_count_wpnonce" name="kopa_set_view_count_wpnonce" value="44771c4bbe" />
-        <input type="hidden" id="kopa_set_user_rate_wpnonce" name="kopa_set_user_rate_wpnonce" value="b4cf5b17f1" />       
+        <input type="hidden" id="kopa_set_user_rate_wpnonce" name="kopa_set_user_rate_wpnonce" value="b4cf5b17f1" />
         <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min91ac.js?ver=2.6.8'></script>
-        <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>        
+        <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
         <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min91ac.js?ver=2.6.8'></script>
-        <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/envato-wordpress-toolkit/jquery_cookie.mine7f0.js?ver=1.3.1'></script>       
+        <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/envato-wordpress-toolkit/jquery_cookie.mine7f0.js?ver=1.3.1'></script>
         <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min91ac.js?ver=2.6.8'></script>
         <script type='text/javascript'>
             /* <![CDATA[ */
@@ -146,4 +132,5 @@ footer file
         <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-includes/js/comment-reply.min99a3.js?ver=afe68907db407f62ff8470ca64c58b3d'></script>
         <script type='text/javascript' src='<?php echo get_home_url(); ?>/wp-includes/js/wp-embed.min99a3.js?ver=afe68907db407f62ff8470ca64c58b3d'></script>
 </body>
+
 </html>

@@ -2,7 +2,7 @@
 	require_once('../../../wp-load.php');
 	require_once( ABSPATH . 'wp-admin/includes/file.php' );
 	global $wpdb;
-	
+	$url = get_home_url().'/wp-content/uploads/news.jpg';
 	$file = $_FILES['fileupload'];
 	if($file['error'] === UPLOAD_ERR_OK)		
 		{

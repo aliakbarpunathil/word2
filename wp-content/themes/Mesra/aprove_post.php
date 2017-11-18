@@ -6,10 +6,10 @@
 	
 	$token=$wpdb->update('wp_user_details', array(
    
-	'active' => $_POST['active']
+	'active' => 1
 ),
 array(
-	'id' => $_POST['user_id']
+	'user_id' => $_GET['user_id']
 )
 );
 

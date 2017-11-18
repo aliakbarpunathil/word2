@@ -118,7 +118,7 @@
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1226"><a href="<?php echo get_template_directory_uri(); ?>/excommitte.php">Ex.Committee</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1216"><a href="<?php echo get_template_directory_uri(); ?>/news_list.php">Announcement</a>                               
                             </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery.php">Gallery</a>                                
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery_category.php">Gallery</a>                                
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/member_list.php">Membership</a>                               
                             </li>
@@ -135,7 +135,7 @@
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1226"><a href="<?php echo get_template_directory_uri(); ?>/excommitte.php">Ex.Committee</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1216"><a href="<?php echo get_template_directory_uri(); ?>/news_list.php">Announcement</a>                               
                             </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery.php">Gallery</a>                                
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery_category.php">Gallery</a>                                
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/member_list.php">Membership</a>                               
                             </li>
@@ -181,7 +181,7 @@
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1226"><a href="<?php echo get_template_directory_uri(); ?>/excommitte.php">Ex.Committee</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1216"><a href="<?php echo get_template_directory_uri(); ?>/news_list.php">Announcement</a>                               
                             </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery.php">Gallery</a>                                
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1229"><a href="<?php echo get_template_directory_uri(); ?>/gallery_category.php">Gallery</a>                                
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1162"><a href="<?php echo get_template_directory_uri(); ?>/excommitte.php">Membership</a>                               
                             </li>

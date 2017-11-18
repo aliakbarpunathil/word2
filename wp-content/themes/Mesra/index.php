@@ -10,10 +10,10 @@
                     <div class="item">
                         <article class="entry-item">
                             <div class="entry-thumb">
-                                <img src="wp-content/uploads/bfi_thumb/Smile-2xau11nxy9ejeotj9qwr9m.jpg" alt="Haute Couture fact file bibendum" /> </div>
+                                <img src="wp-content/uploads/bfi_thumb/slide1.jpg" alt="Haute Couture fact file bibendum" /> </div>
                             <!-- entry-thumb -->
                             <div class="flex-caption">
-                                <h3 class="entry-title"><a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">Haute Couture fact file bibendum</a></h3>
+                                <h3 class="entry-title"><a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum">Come on Friends, Lets go back to our school for a day...</a></h3>
                                 <p>Curabitur ullamcorper, felis bibendum rutrum consectetur, justo felis elementum metus, sed feugiat nisl ligula non magna. Pellentesque vel accumsan odio.&hellip;</p>
                                 <span class="arrow-wrapper">
                                         <span class="arrow-left"></span>
@@ -27,11 +27,11 @@
                     <div class="item">
                         <article class="entry-item">
                             <div class="entry-thumb">
-                                <img src="wp-content/uploads/bfi_thumb/unsplash-49-2xau11nxy9ejeotj9qwr9m.jpg" alt="J-Lo’s divisive Versace dress-trouser hybrid" /> </div>
+                                <img src="wp-content/uploads/bfi_thumb/slide2.jpg" alt="J-Lo’s divisive Versace dress-trouser hybrid" /> </div>
                             <!-- entry-thumb -->
                             <div class="flex-caption">
-                                <h3 class="entry-title"><a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid">J-Lo’s divisive Versace dress-trouser hybrid</a></h3>
-                                <p>Curabitur ullamcorper, felis bibendum rutrum consectetur, justo felis elementum metus, sed feugiat nisl ligula non magna. Pellentesque vel accumsan odio.&hellip;</p>
+                                <h3 class="entry-title"><a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid">Come on Friends, Lets go back to our school for a day...</a></h3>
+                                <p>Come on Friends, Lets go back to our school for a day...</p>
                                 <span class="arrow-wrapper">
                                         <span class="arrow-left"></span>
                                 <span class="arrow-right"></span>
@@ -44,11 +44,11 @@
                     <div class="item">
                         <article class="entry-item">
                             <div class="entry-thumb">
-                                <img src="wp-content/uploads/bfi_thumb/unsplash-79-2xau11nxy9ejeotj9qwr9m.jpg" alt="The Model Trainer: how to get legs like Gisele" /> </div>
+                                <img src="wp-content/uploads/bfi_thumb/slide3.jpg" alt="The Model Trainer: how to get legs like Gisele" /> </div>
                             <!-- entry-thumb -->
                             <div class="flex-caption">
                                 <h3 class="entry-title"><a href="index0745.html?p=532" title="The Model Trainer: how to get legs like Gisele">The Model Trainer: how to get legs like Gisele</a></h3>
-                                <p>Sed nec neque purus. Nulla faucibus, lectus vitae gravida mattis, ligula magna malesuada purus, vel semper nibh risus sed libero.&hellip;</p>
+                                <p>Come on Friends, Lets go back to our school for a day...</p>
                                 <span class="arrow-wrapper">
                                         <span class="arrow-left"></span>
                                 <span class="arrow-right"></span>
@@ -561,7 +561,9 @@
 
                         <div class="widget-area-5 pull-left">
 							<div class="widget kopa-carousel-list-2-widget" style="border:solid #dedede  10px;">
-								<img src="wp-content/uploads/member-login-button.png"/>					
+							<a href="<?php echo get_template_directory_uri(); ?>/admin-login.php" >
+								<img src="wp-content/uploads/member-login-button.png"/>			
+</a>								
 							</div>
                             <div class="widget kopa-carousel-list-2-widget" style="border:solid #3b5998  10px;">
                                 <h4 class="widget-title">OBITUARY</h4>
@@ -571,7 +573,7 @@
                                             <li>
                                                 <article class="entry-item">
                                                     <div class="entry-thumb">
-                                                        <a href="indexe0d2.html?p=742" title="Haute Couture fact file bibendum"><img src="wp-content/uploads/bfi_thumb/Smile-2xau11nw2wiqo72ad008p6.jpg" alt="Haute Couture fact file bibendum" /></a>
+                                                        <a href="#" title="Haute Couture fact file bibendum"><img src="wp-content/uploads/obituary.jpg" alt="Haute Couture fact file bibendum" /></a>
                                                     </div>
                                                 </article>
                                             </li>                                                                                      
@@ -585,7 +587,7 @@
                                             <li>
                                                 <article class="entry-item">
                                                     <div class="entry-thumb">
-                                                        <a href="indexb648.html?p=773" title="J-Lo’s divisive Versace dress-trouser hybrid"><img src="wp-content/uploads/bfi_thumb/unsplash-49-2xau11nw2wiqo72ad008p6.jpg" alt="J-Lo’s divisive Versace dress-trouser hybrid" /></a>
+                                                        <a href="#" title="J-Lo’s divisive Versace dress-trouser hybrid"><img src="wp-content/uploads/announcement.jpg" alt="J-Lo’s divisive Versace dress-trouser hybrid" /></a>
                                                     </div>
                                                 </article>
                                             </li>                                           
@@ -603,11 +605,11 @@
                         <!-- position 5 -->
 
                         <div class="widget kopa-article-list-1-widget clearfix">
-                            <h4 class="widget-title">Business</h4>
+                            <h4 class="widget-title">SPONSORED BY</h4>
                             <article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                        <img src="wp-content/gate.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
                                 </div>
                                 <!-- entry-thumb -->                               
                                 <!-- entry-content -->
@@ -615,7 +617,7 @@
 							<article class="last-item clearfix">
                                 <div class="entry-thumb">
                                     <a href="index475a.html?p=569" title="Star Wars: &#8216;Day one&#8217; shooting begins">
-                                        <img src="wp-content/uploads/bfi_thumb/slide-2-2xau10npfhs2enzqd0w74a.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
+                                        <img src="wp-content/resort.jpg" alt="Star Wars: &#8216;Day one&#8217; shooting begins" /> </a>
                                 </div>
                                 <!-- entry-thumb -->                               
                                 <!-- entry-content -->
